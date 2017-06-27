@@ -13,7 +13,8 @@ The P, I, and D parameters play different roles in the control system as describ
 In this system the simulater does not have drift so I keep the I parameter to zero. Essentially this becomes a PD controller which is  strightforward to tune manually as explained below.
 
 * I first assume the D parameter to be zero to tune the P parameter of a P controller. As the steering angle must be between -1 to 1 the P parameter has a maximum value of 1.3 with a cte of 0.7598 obtained from the simulator. The steering angle is related to the cte with the following formula:
-steering angle = -P * cte
+
+*steering angle = -P * cte*
 
 Setting the values for the parameters P, I, D to 1.3, 0, 0 results in a wobbly vehicle as shown in [this] video. I progressively half the value of P to 0.65, 0.325, and 0.1625. For P value of 0.1625 the car still wobles but much less. So fix the p value to be 0.1625.
 
