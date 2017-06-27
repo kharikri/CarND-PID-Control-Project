@@ -6,9 +6,9 @@ This is the fourth  project in the second term of the Self Driving Car Nanodegre
 
 ## PID Controller Implementation Details:
 The P, I, and D parameters play different roles in the control system as described below:
-* P generates a steering correction proportional to the cross track error (cte). Cross track error is the lateral distance between the vehicle and the reference trajectory. A large P results in the vehicle overshooting the track leading to oscillations
-* I controls the drift in the vehicle. A misalignment in the car leads to drift which makes the car drive at an angle instead of in a straight line. To fix the effects of drift the I parameter collects the cte over time
-* The D parameter dampens the overshooting caused by P. D is proportional to the changing rate of the cte
+* **P** generates a steering correction proportional to the cross track error (cte). Cross track error is the lateral distance between the vehicle and the reference trajectory. A large P results in the vehicle overshooting the track leading to oscillations
+* **I** controls the drift in the vehicle. A misalignment in the car leads to drift which makes the car drive at an angle instead of in a straight line. To fix the effects of drift the I parameter collects the cte over time
+* The **D** parameter dampens the overshooting caused by P. D is proportional to the changing rate of the cte
 
 In this system the simulater does not have drift so I keep the I parameter to zero. Essentially this becomes a PD controller which is  strightforward to tune manually as explained below.
 
