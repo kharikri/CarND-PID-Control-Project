@@ -16,9 +16,9 @@ I first assume the D parameter to be zero to tune the P parameter of a P control
 
 *steering angle = -P * cte*
 
-Setting the values for the parameters P, I, D to 1.3, 0, 0 results in a wobbly vehicle as shown in [this] video. I progressively half the value of P to 0.65, 0.325, and 0.1625. For P value of 0.1625 the car still wobbles but much less. So I fixed the P value to be 0.1625.
+Setting the values for the parameters P, I, D to 1.3, 0, 0 results in a wobbly vehicle as shown in [this](https://youtu.be/E94Acxrwkz0) video. I progressively half the value of P to 0.65, 0.325, and 0.1625. For P value of 0.1625 the car still wobbles but much less. So I fixed the P value to be 0.1625.
 
-As mentioned before the D parameter dampens the wobbles seen with the P parameter. I start with a value of 1.0 for D and I get [this] result. The wobbles have considerably reduced but the vehicle goes off the road after some time. I progressively increment the D value by 1 and at D equals 3 I get a system where the vehicle stays inside the track.
+As mentioned before the D parameter dampens the wobbles seen with the P parameter. I start with a value of 1.0 for D and I get [this] (https://youtu.be/rhh67k21dIk) result. The wobbles have considerably reduced but the vehicle goes off the road after some time. I progressively increment the D value by 1 and at D equals 3 I get a system where the vehicle stays inside the track.
 
 With these parameters (P = 0.1625, I = 0, D = 3.0) I also varied the speed from 30 mph to 90 mph. The vehicle stays inside the track for speeds between 30 mph to 60 mph. 
 
