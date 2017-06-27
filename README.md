@@ -1,5 +1,14 @@
-# CarND-Controls-PID
-Self-Driving Car Engineer Nanodegree Program
+# PID Controller 
+
+This is the fourth  project in the second term of the Self Driving Car Nanodegree course offered by Udacity. In this project I implemented a PID controller to maneuver a vehicle around a simulated track. A [PID controller](https://en.wikipedia.org/wiki/PID_controller) continuously calculates an error value as the difference between a desired setpoint and a measured process variable and applies a correction based on proportional, integral, and derivative terms (sometimes denoted P, I, and D respectively) which give their name to the controller type. 
+
+The P, I, and D parameters play different roles in the control system as described below:
+* P generates a steering correction proportional to the cross track error (cte). Cross track error is the lateral distance between the vehicle and the reference trajectory. A large P results in the vehicle overshooting the track leading to oscillations
+* I controls the drift in the vehicle. A misalignment in the car leads to drift which makes the car drive at an angle instead of in a straight line. To fix the effects of drift the I parameter collects the cte over time
+* The D parameter dampens the overshooting caused by P. D is proportional to the changing rate of the cte
+
+In this system the simulater does not have drift so I keep the 'I' parameter to zero. Essentially this becomes a PD controller which is fairly strightforward to tune as explained below.
+
 
 ---
 
