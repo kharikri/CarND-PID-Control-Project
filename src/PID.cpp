@@ -1,4 +1,5 @@
 #include "PID.h"
+#include <iostream>
 
 using namespace std;
 
@@ -11,19 +12,22 @@ PID::PID() {}
 PID::~PID() {}
 
 void PID::Init(double Kp, double Ki, double Kd) {
-	Kp = 0.0;
-	Ki = 0.0;
-	Kd = 0.0;
+    Kp_ = Kp;
+    Ki_ = Ki;
+    Kd_ = Kd;
+	
+	p_error = 0.0;
+	i_error = 0.0;
+	d_error = 0.0;
 }
 
 void PID::UpdateError(double cte) {
-	    p_error = cte;
-        d_error = cte - prev_cte
-        i_error += cte
-        prev_cte = cte
+	i_error += cte;
+	d_error = cte - p_error;
+	p_error = cte;
 }
 
 double PID::TotalError() {
-	return (p_error + i_error + d_error);
+	return -(Kp_ * p_error + Ki_ * i_error + Kd_ * d_error);
 }
 
