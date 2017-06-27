@@ -36,7 +36,7 @@ While these parameters keep the car on the track between 30 to 60 mph the car is
 * gcc/g++ >= 5.4
   * Windows: recommend using [MinGW](http://www.mingw.org/)
 * [uWebSockets](https://github.com/uWebSockets/uWebSockets)
-  * Here are the detailed instructions to install websockets
+  * Run ./install-ubuntu.sh.
 * Simulator. You can download these from the [project intro page](https://github.com/udacity/self-driving-car-sim/releases) in the classroom.
 
 ## Build Instructions
