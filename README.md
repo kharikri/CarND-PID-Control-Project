@@ -1,10 +1,10 @@
 # PID Controller 
 
-## Introduction:
+## Introduction
 
 This is the fourth  project in the second term of the Self Driving Car Nanodegree course offered by Udacity. In this project I implemented a PID controller to maneuver a vehicle around a simulated track. A [PID controller](https://en.wikipedia.org/wiki/PID_controller) continuously calculates an error value as the difference between a desired setpoint and a measured process variable and applies a correction based on proportional, integral, and derivative terms (sometimes denoted P, I, and D respectively) which give their name to the controller type. 
 
-## PID Controller Implementation Details:
+## PID Controller Implementation Details
 The P, I, and D parameters play different roles in the control system as described below:
 * **P** generates a steering correction proportional to the cross track error (cte). Cross track error is the lateral distance between the vehicle and the reference trajectory. A large P results in the vehicle overshooting the track leading to oscillations
 * **I** controls the drift in the vehicle. A misalignment in the car leads to drift which makes the car drive at an angle instead of in a straight line. To fix the effects of drift the I parameter collects the cte over time
@@ -22,7 +22,7 @@ As mentioned before the D parameter dampens the wobbles seen with the P paramete
 
 With these parameters (P = 0.1625, I = 0, D = 3.0) I also varied the speed from 30 mph to 90 mph. The vehicle stays inside the track for speeds between 30 mph to 60 mph. 
 
-## Conclusions:
+## Conclusions
 While these parameters keep the car on the track between 30 to 60 mph the car is still wobbly. To reduce the wobble and also to run the car at higher speeds I should use an algorithem like Twiddle to automatically choose the parameter values.
 
 ---
@@ -44,6 +44,6 @@ While these parameters keep the car on the track between 30 to 60 mph the car is
 1. Clone this repo.
 2. Make a build directory: `mkdir build && cd build`
 3. Compile: `cmake .. && make`
-4. Run it: `./pid`. 
+4. Run it: `./pid`
 
 
