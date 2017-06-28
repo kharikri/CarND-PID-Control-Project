@@ -12,7 +12,7 @@ The P, I, and D parameters play different roles in the control system as describ
 
 In this system, the simulator does not have drift so I keep the I parameter to zero. Essentially this becomes a PD controller which is straightforward to tune manually as explained below. P and D move in opposite directions and the trick is to find optimal values for these parameters to keep the vehicle on the track.
 
-I first assume the D parameter to be zero to tune the P parameter of a P controller. As the steering angle must be between -1 to 1 the P parameter has a maximum value of 1.3 with a cte of 0.7598 obtained from the simulator. The steering angle is related to the cte with the following formula:
+I first assume the D parameter to be zero to tune the P parameter of a P controller. As the steering angle must be between -1 and 1 the P parameter has a maximum value of 1.3 with a cte of 0.7598 obtained from the simulator. The steering angle is related to the cte with the following formula:
 
 *steering angle = -P * cte*
 
