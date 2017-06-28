@@ -18,12 +18,12 @@ I first assume the D parameter to be zero to tune the P parameter of a P control
 
 Setting the values for the parameters P, I, D to 1.3, 0, 0 results in a wobbly vehicle as shown in [this](https://youtu.be/E94Acxrwkz0) video. I progressively half the value of P to 0.65, 0.325, and 0.1625. For P value of 0.1625 the car still wobbles but much less. So, I fixed the P value to be 0.1625.
 
-As mentioned before the D parameter dampens the wobbles seen with the P parameter. I start with a value of 1.0 for D and I get [this](https://youtu.be/rhh67k21dIk) result. The wobbles have considerably reduced but the vehicle goes off the road after some time. I progressively increment the D value by 1 and at D equals 4 I get a system where the vehicle stays inside the track. See the final result [here]().
+As mentioned before the D parameter dampens the wobbles seen with the P parameter. I start with a value of 1.0 for D and I get [this](https://youtu.be/rhh67k21dIk) result. The wobbles have considerably reduced but the vehicle goes off the road after some time. I progressively increment the D value by 1 and at D equals 4 I get a system where the vehicle stays inside the track. See the final result [here](https://youtu.be/gy5sFYA7r6U).
 
 With these parameters (P = 0.1625, I = 0, D = 4.0) I also varied the speed from 30 mph to 70 mph. The vehicle stays inside the track for speeds between 30 mph to 50 mph. 
 
 ## Conclusions
-While these parameters keep the car on the track between 30 to 50 mph the car is still wobbly. To reduce the wobble, I tried decreasing P and increasing D further but for these values while the wobble decreases the vehicle goes off the track because the vehicle is not quick enough to respond to corrections. Here is a video for parameters (P = 0.0813, I = 0, D = 4.0). An algorithm like Twiddle to automatically choose the optimal parameter values will reduce the wobble and also run the car at higher speeds.
+While these parameters keep the car on the track between 30 to 50 mph the car is still wobbly. To reduce the wobble, I tried decreasing P and increasing D further but for these values while the wobble decreases the vehicle goes on the curb a bit because it is not quick enough to respond to corrections. [Here](https://youtu.be/LHHxrWOUdaA) is a video for parameters (P = 0.0813, I = 0, D = 4.0). An algorithm like Twiddle to automatically choose the optimal parameter values will reduce the wobble and also enable to run the car at higher speeds.
 
 ---
 
