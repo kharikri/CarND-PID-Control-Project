@@ -36,7 +36,7 @@ While these parameters keep the car on the track between 30 to 50 mph the car is
 * gcc/g++ >= 5.4
   * Windows: recommend using [MinGW](http://www.mingw.org/)
 * [uWebSockets](https://github.com/uWebSockets/uWebSockets)
-  * Run ./install-ubuntu.sh.
+  * Run ./install-ubuntu.sh. Check [here](https://github.com/kharikri/CarND-Kidnapped-Vehicle-Project/blob/master/WebSocketInstallation.md) if you run into issues with websocket installation for windows 10
 * Simulator. You can download these from the [project intro page](https://github.com/udacity/self-driving-car-sim/releases) in the classroom.
 
 ## Build Instructions
